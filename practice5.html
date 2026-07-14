@@ -1,1 +1,67 @@
-//Project Start
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Website Feedback Form</h1>
+
+    <form>
+
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="2" maxlength="50">
+    <br><br>
+
+    <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required> 
+<br><br>
+
+<label for="password">Password:</label><br>
+    <input type="password" id="password" maxlength="8" required>
+<br><br>
+
+<label for="Feedback">Feedback Category:</label>
+<select id="Feedback" name="Feedback">
+    <option value="general">General Feedback</option>
+    <option value="web design">Website Design</option>
+    <option value="perf">Performance</option>
+    <option value="func">Functionality</option>
+    <option value="sec">Security</option>
+</select> <br><br>
+
+
+<fieldset>
+    <legend>Preferred Contact Method:</legend>
+    <label for="phone">
+        <input type="radio" id="phone" name="contact" value="phone" checked> Phone <br>
+    
+    <label for="email">
+        <input type="radio" id="email" name="contact" value="email"> Email
+</fieldset><br>
+
+<fieldset>
+    <label for="mobileApp">Additional Features of Interest:</label><br>
+        <input type="checkbox" id="mobileApp" name="featuresOfInterest" value="features"> Mobile App
+    <label for="darkMode"></label><br>
+        <input type="checkbox" id="darkMode" name="featuresOfInterest" value="features"> Dark Mode
+    <label for="newsletter"></label><br>
+        <input type="checkbox" id="newsletter" name="featuresOfInterest" value="features"> Newsletter
+
+</fieldset>
+
+<fieldset>
+    <legend>Comments</legend>
+
+<label for="comments"></label>
+<textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comments here..." maxlength="500" required></textarea> 
+</fieldset><br>
+
+<input type="submit" value="Submit">
+
+</body>
+</html>
